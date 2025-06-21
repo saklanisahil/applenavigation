@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Navigation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: white;
+      padding: 0 22px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 44px;
+    }
+
+    .nav-center {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    ul {
+      display: flex;
+      gap: 18px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #1d1d1f;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 44px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    a:hover {
+      opacity: 1;
+    }
+
+    .apple-logo {
+      color: #1d1d1f;
+      font-size: 18px;
+    }
+
+    .search {
+      color: #1d1d1f;
+      font-size: 12px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="apple-logo"><i class="fab fa-apple"></i></div>
+    <div class="nav-center">
+      <ul>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Mac</a></li>
+        <li><a href="#">iPad</a></li>
+        <li><a href="#">iPhone</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">AirPods</a></li>
+        <li><a href="#">TV & Home</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+    <div class="search"><i class="fas fa-search"></i></div>
+  </nav>
+</body>
+</html>
